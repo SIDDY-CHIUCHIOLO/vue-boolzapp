@@ -1,27 +1,67 @@
 
-main #my-container{
-    height: 100vh;
-    background-color: black;
-    position: relative;
+body{
+    font-size: 14px;
+}
+
+main img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: auto;
+}
+
+main i{
+    color: #b1b1b1;
 }
 
 main #my-container #my-header{
     height: 20vh;
-    background-color: green;
+    background-color: #03988a;
 }
 
 main #my-container #my-main{
     height: 80vh;
-    background-color: pink;
+    background-color: #d9dbd4;
 }
 
-main #my-container #my-wrapper{
+main #my-container #my-wrapper-boolzapp{
     height: 90vh;
     width: 80%;
-    background-color: red;
+    background-color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+main #my-container #my-wrapper-boolzapp #my-wrapper-contact-list{
+    height: 100%;
+    width: 35%;
+}
+
+main #my-container #my-wrapper-boolzapp #my-wrapper-contact-list .my-contacts-wrapper{
+    overflow-y: scroll;
+    height: 62vh;
+}
+
+main #my-container #my-wrapper-boolzapp #my-wrapper-contact-list .my-options {
+    height: 10vh;
+    background-color: #eaeaea;
+}
+
+main #my-container #my-wrapper-boolzapp #my-wrapper-contact-list .my-notification-options  {
+    height: 10vh;
+    background-color: #8edafc;
+}
+
+main #my-container #my-wrapper-boolzapp #my-wrapper-contact-list .my-search-input{
+    height: 7vh;
+    background-color: #f8f8f8;
+}
+
+main #my-container #my-wrapper-boolzapp #my-wrapper-messages{
+    background-color: blue;
+    height: 100%;
+    width: 65%;
 }
 
