@@ -1,0 +1,27 @@
+
+main #my-container{
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+
+main #my-container #my-header{
+    height: 20vh;
+    background-color: green;
+}
+
+main #my-container #my-main{
+    height: 80vh;
+    background-color: pink;
+}
+
+main #my-container #my-wrapper{
+    height: 90vh;
+    width: 80%;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
