@@ -12,6 +12,7 @@ main img{
 
 main i{
     color: #b1b1b1;
+    font-size: 18px;
 }
 
 main #my-container #my-header{
@@ -44,6 +45,11 @@ main #my-container #my-wrapper-boolzapp #my-wrapper-contact-list .my-contacts-wr
     height: 62vh;
 }
 
+main #my-container #my-wrapper-boolzapp #my-wrapper-contact-list .my-contacts-wrapper .my-contact{
+    border-bottom: #e9ebeb solid 2px;
+    
+}
+
 main #my-container #my-wrapper-boolzapp #my-wrapper-contact-list .my-options {
     height: 10vh;
     background-color: #eaeaea;
@@ -60,8 +66,52 @@ main #my-container #my-wrapper-boolzapp #my-wrapper-contact-list .my-search-inpu
 }
 
 main #my-container #my-wrapper-boolzapp #my-wrapper-messages{
-    background-color: blue;
     height: 100%;
     width: 65%;
 }
 
+main #my-container #my-wrapper-boolzapp #my-wrapper-messages .my-chosen-contact{
+    background-color: #eaeaea;
+    border-left: rgb(208, 208, 208) solid 2px;
+    height: 10vh;
+}
+
+main #my-container #my-wrapper-boolzapp #my-wrapper-messages .my-sent-messages{
+    height: 70vh;
+    background-image: url(../img/mine.jpg);
+    background-position: center;
+    background-size: contain;
+    overflow-y: scroll;
+}
+
+main #my-container #my-wrapper-boolzapp #my-wrapper-messages .my-sent-messages .my-messages{
+    width: 40%;
+    height: 40px;
+    border-radius: 8px;
+}
+
+main #my-container #my-wrapper-boolzapp #my-wrapper-messages .my-sent-messages .my-sent-message{
+    background-color: #d5f9ba;
+}
+
+main #my-container #my-wrapper-boolzapp #my-wrapper-messages .my-sent-messages .my-contact-messages{
+    background-color: white;
+}
+
+main #my-container #my-wrapper-boolzapp #my-wrapper-messages .my-messages-to-send{
+    height: 10vh;
+    background-color: #eaeaea;
+    
+}
+
+main .my-data{
+    font-size: 12px;
+    color: rgb(175, 175, 175);
+    position: absolute;
+    bottom: 1px;
+    right: 2px;
+}
+
+main .my-message{
+    line-height: 40px;
+}

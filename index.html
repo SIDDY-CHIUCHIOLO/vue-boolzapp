@@ -73,7 +73,7 @@
 
                                 <!-- lista contatti -->
                                 <div class="my-contacts-wrapper">
-                                    <div class="p-3 d-flex justify-content-between border-bottom border-dark">
+                                    <div class="my-contact p-3 d-flex justify-content-between">
                                         <div class="d-flex">
                                             <img class="me-2" src="img/avatar_1.jpg" alt="avatar">
                                             <div>
@@ -91,6 +91,54 @@
                             <!-- contenitore dei messaggi -->
                             <div id="my-wrapper-messages">
 
+                                <!-- contatto scelto -->
+                                <div class="my-chosen-contact d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img class="m-2" src="img/avatar_1.jpg" alt="avatar">
+                                        <div>
+                                            <span class="fw-bold">Michele</span>
+                                            <span class="text-secondary d-block">Ultimo accesso oggi alle 12:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-search pe-3"></i>
+                                        <i class="fas fa-paperclip pe-3"></i>
+                                        <i class="fas fa-ellipsis-vertical pe-4"></i>
+                                    </div>
+                                </div>
+
+                                <!-- messaggi inviati al contatto scelto -->
+                                <div class="my-sent-messages p-5">
+
+                                    <!-- i miei messaggi -->
+                                    <div class="my-sent-message-wrapper d-flex align-items-end flex-column">
+                                        <div class="my-messages my-sent-message position-relative mb-2">
+                                            <span class="my-message ms-2">Hai portato a spasso il cane?</span>
+                                            <span class="my-data">15:50</span>
+                                        </div>
+
+                                        <div class="my-messages my-sent-message position-relative mb-2">
+                                            <span class="my-message ms-2">Ricordati di stendere i panni!</span>
+                                            <span class="my-data">15:50</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- messeggi del contatto -->
+                                    <div class="my-sent-message-wrapper d-flex align-items-start flex-column">
+                                        <div class="my-messages my-contact-messages position-relative">
+                                            <span class="my-message ms-2">Tutto fatto!</span>
+                                            <span class="my-data">16:15</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <!-- messaggi da inviare al contatto scelto -->
+                                <div class="my-messages-to-send d-flex align-items-center">
+                                    <i class="far fa-smile m-4 text-dark"></i>
+                                    <input class="w-100 p-2 border-0" type="text" placeholder="Scrivi un messaggio">
+                                    <i class="fas fa-microphone m-4 text-dark"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
