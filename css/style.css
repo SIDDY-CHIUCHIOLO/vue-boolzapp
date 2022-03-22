@@ -115,3 +115,11 @@ main .my-data{
 main .my-message{
     line-height: 40px;
 }
+
+main .my-contact:hover{
+    background-color: #d5f9ba;
+}
+
+main .my-contact-active{
+    background-color: #e9ebeb;
+}

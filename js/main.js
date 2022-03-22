@@ -2,7 +2,7 @@
 const root = new Vue({
     el: "#root",
     data: {
-
+        arrayIndexActive: [0],
         contacts: [
             {
                 name: 'Michele',
@@ -164,8 +164,15 @@ const root = new Vue({
                         status: 'received'
                     }
                 ],
-            }
-        ]
+            },
+        ],
+    },
+    methods:{
+        addClassActive(element, index){
+            root.arrayIndexActive = [];
+            root.arrayIndexActive.push(element);
+            console.log(root.arrayIndexActive[0].avatar)
+        }
     }
 })
 

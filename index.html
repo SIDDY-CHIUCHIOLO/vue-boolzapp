@@ -75,7 +75,7 @@
                                 <div class="my-contacts-wrapper">
 
                                     <!-- codice da ripetere -->
-                                    <div v-for="(element, index) in contacts" class="my-contact p-3 d-flex justify-content-between">
+                                    <div v-for="(element, index) in contacts" class="my-contact p-3 d-flex justify-content-between" @click="addClassActive(element, index)" :class="(element.avatar === arrayIndexActive[0].avatar) ? 'my-contact-active' : '' ">
                                         <div class="d-flex">
                                             <img class="me-2" src="img/avatar_1.jpg" :alt="element.avatar">
                                             <div>
@@ -95,11 +95,11 @@
                             <div id="my-wrapper-messages">
 
                                 <!-- contatto scelto -->
-                                <div class="my-chosen-contact d-flex justify-content-between">
+                                <div class="my-chosen-contact d-flex justify-content-between " v-for="(element, index) in arrayIndexActive">
                                     <div class="d-flex align-items-center">
                                         <img class="m-2" src="img/avatar_1.jpg" alt="avatar">
                                         <div>
-                                            <span class="fw-bold">Michele</span>
+                                            <span class="fw-bold">{{element.name}}</span>
                                             <span class="text-secondary d-block">Ultimo accesso oggi alle 12:00</span>
                                         </div>
                                     </div>
@@ -117,11 +117,6 @@
                                     <div class="my-sent-message-wrapper d-flex align-items-end flex-column">
                                         <div class="my-messages my-sent-message position-relative mb-2">
                                             <span class="my-message ms-2">Hai portato a spasso il cane?</span>
-                                            <span class="my-data">15:50</span>
-                                        </div>
-
-                                        <div class="my-messages my-sent-message position-relative mb-2">
-                                            <span class="my-message ms-2">Ricordati di stendere i panni!</span>
                                             <span class="my-data">15:50</span>
                                         </div>
                                     </div>
