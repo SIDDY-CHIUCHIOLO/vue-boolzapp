@@ -42,7 +42,7 @@ main #my-container #my-wrapper-boolzapp #my-wrapper-contact-list{
 
 main #my-container #my-wrapper-boolzapp #my-wrapper-contact-list .my-contacts-wrapper{
     overflow-y: scroll;
-    height: 62vh;
+    height: 60vh;
 }
 
 main #my-container #my-wrapper-boolzapp #my-wrapper-contact-list .my-contacts-wrapper .my-contact{
@@ -61,7 +61,7 @@ main #my-container #my-wrapper-boolzapp #my-wrapper-contact-list .my-notificatio
 }
 
 main #my-container #my-wrapper-boolzapp #my-wrapper-contact-list .my-search-input{
-    height: 7vh;
+    height: 10vh;
     background-color: #f8f8f8;
 }
 
