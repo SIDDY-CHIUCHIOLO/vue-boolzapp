@@ -171,7 +171,7 @@ const root = new Vue({
         addClassActive(element, index){
             root.arrayIndexActive = [];
             root.arrayIndexActive.push(element);
-            console.log(root.arrayIndexActive[0].avatar)
+            //console.table(root.arrayIndexActive)
         }
     }
 })

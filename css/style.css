@@ -1,6 +1,7 @@
 
 body{
     font-size: 14px;
+    min-width: 850px;
 }
 
 main img{
@@ -85,8 +86,7 @@ main #my-container #my-wrapper-boolzapp #my-wrapper-messages .my-sent-messages{
 }
 
 main #my-container #my-wrapper-boolzapp #my-wrapper-messages .my-sent-messages .my-messages{
-    width: 40%;
-    height: 40px;
+    width: 60%;
     border-radius: 8px;
 }
 

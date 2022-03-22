@@ -111,24 +111,15 @@
                                 </div>
 
                                 <!-- messaggi inviati al contatto scelto -->
-                                <div class="my-sent-messages p-5">
+                                <div class="my-sent-messages p-5" v-for="(element, index) in arrayIndexActive">
 
-                                    <!-- i miei messaggi -->
-                                    <div class="my-sent-message-wrapper d-flex align-items-end flex-column">
-                                        <div class="my-messages my-sent-message position-relative mb-2">
-                                            <span class="my-message ms-2">Hai portato a spasso il cane?</span>
-                                            <span class="my-data">15:50</span>
+                                    <div class="d-flex" v-for="(element, index) in element.messages" :class="(element.status == 'sent') ? 'justify-content-end' : 'justify-content-start' ">
+                                        <div class="my-sent-message position-relative my-messages mb-4" :class="(element.status == 'sent') ? 'my-sent-message' : 'bg-white' ">
+                                            <p class="my-message m-0 mx-2 pb-3">{{element.message}}</p>
+                                            <p class="my-data m-0">{{element.date}}</p>
                                         </div>
                                     </div>
-
-                                    <!-- messeggi del contatto -->
-                                    <div class="my-sent-message-wrapper d-flex align-items-start flex-column">
-                                        <div class="my-messages my-contact-messages position-relative">
-                                            <span class="my-message ms-2">Tutto fatto!</span>
-                                            <span class="my-data">16:15</span>
-                                        </div>
-                                    </div>
-                                    
+                                        
                                 </div>
 
                                 <!-- messaggi da inviare al contatto scelto -->
