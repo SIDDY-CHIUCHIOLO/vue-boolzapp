@@ -181,11 +181,21 @@ const root = new Vue({
                 message: messageContent,
                 status: 'sent',
             };
+        
             if (messageContent .trim() !== ""){
                 contacts[index].messages.push(newMessage);
                 this.newMessageContent =""
             }
-        }
+
+            setTimeout(() =>{
+                const replyMessage = {
+                    date: '10/01/2020 15:50:00',
+                    message: "ciao",
+                    status: 'received',
+                }
+                contacts[index].messages.push(replyMessage);
+            }, 1000);
+        },
     }
 })
 

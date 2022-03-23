@@ -74,7 +74,6 @@
                                 <!-- lista contatti -->
                                 <div class="my-contacts-wrapper">
 
-                                    <!-- codice da ripetere -->
                                     <div v-for="(element, index) in contacts" class="my-contact p-3 d-flex justify-content-between" @click="addClassActive(index, element)" :class="(index === indexActive) ? 'my-contact-active' : '' ">
                                         <div class="d-flex">
                                             <img class="me-2" :src="`img/avatar${element.avatar}.jpg`" :alt="element.avatar">
@@ -93,7 +92,6 @@
 
                             <!-- contenitore default dei messaggi -->
                             <div v-if="arrayIndexActive.length < 1" id="my-wrapper-messages" class="my-wrapper-messages-default">
-
                             </div>
 
                             <!-- contenitore dei messaggi al click-->

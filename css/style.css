@@ -72,8 +72,6 @@ main #my-container #my-wrapper-boolzapp #my-wrapper-messages{
 }
 
 main #my-container #my-wrapper-boolzapp #my-wrapper-messages.my-wrapper-messages-default{
-    height: 100%;
-    width: 65%;
     background-image: url(../img/whatsapp.jpg);
     background-position: center;
     background-size: cover;
