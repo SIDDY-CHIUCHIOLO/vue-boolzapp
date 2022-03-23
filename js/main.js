@@ -2,7 +2,9 @@
 const root = new Vue({
     el: "#root",
     data: {
-        arrayIndexActive: [0],
+        indexActive: 0,
+        newMessageContent: "",
+        arrayIndexActive:[],
         contacts: [
             {
                 name: 'Michele',
@@ -168,10 +170,21 @@ const root = new Vue({
         ],
     },
     methods:{
-        addClassActive(element, index){
+        addClassActive(index, element){
+            root.indexActive = index;
             root.arrayIndexActive = [];
             root.arrayIndexActive.push(element);
-            //console.table(root.arrayIndexActive)
+        },
+        sendNewMessage(contacts, index, messageContent){
+            const newMessage = {
+                date: '10/01/2020 15:50:00',
+                message: messageContent,
+                status: 'sent',
+            };
+            if (messageContent .trim() !== ""){
+                contacts[index].messages.push(newMessage);
+                this.newMessageContent =""
+            }
         }
     }
 })
