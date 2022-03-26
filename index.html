@@ -67,14 +67,14 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text" id="basic-addon1"> <i class="fas fa-search p-1"></i></span>
                                     </div>
-                                    <input type="text" class="form-control" placeholder="Cerca e inizia una nuova chat" aria-label="Username"
+                                    <input v-model="contentToSearch" @keyup=" filterContacts(contentToSearch)" type="text" class="form-control" placeholder="Cerca e inizia una nuova chat" aria-label="Username"
                                     aria-describedby="basic-addon1">
                                 </div>
 
                                 <!-- lista contatti -->
                                 <div class="my-contacts-wrapper">
 
-                                    <div v-for="(element, index) in contacts" class="my-contact p-3 d-flex justify-content-between" @click="addClassActive(index, element)" :class="(index === indexActive) ? 'my-contact-active' : '' ">
+                                    <div v-for="(element, index) in contacts" class="my-contact p-3 d-flex justify-content-between" @click="addClassActive(index, element)" :class="(index === indexActive) ? 'my-contact-active' : '' " v-if="element.visible">
                                         <div class="d-flex">
                                             <img class="me-2" :src="`img/avatar${element.avatar}.jpg`" :alt="element.avatar">
                                             <div>

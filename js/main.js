@@ -5,6 +5,7 @@ const root = new Vue({
         indexActive: 0,
         newMessageContent: "",
         arrayIndexActive:[],
+        contentToSearch:"",
         contacts: [
             {
                 name: 'Michele',
@@ -196,6 +197,16 @@ const root = new Vue({
                 contacts[index].messages.push(replyMessage);
             }, 1000);
         },
+        filterContacts(string){
+            const self = this;
+            self.contacts.forEach((element) => {
+                if (element.name.toLowerCase().includes(string.toLowerCase().trim())){
+                    element.visible = true;
+                } else {
+                    element.visible = false;
+                }
+            })
+        }
     }
 })
 
